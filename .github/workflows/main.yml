@@ -1,21 +1,27 @@
-name: LaTeX build
+name: Build LaTeX PDF
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v3
 
       - name: Install TeX Live
-        run: sudo apt-get install -y texlive-full
+        run: sudo apt-get update && sudo apt-get install -y texlive-full
 
       - name: Compile LaTeX document
-        run: pdflatex main.tex
+        run: |
+          pdflatex -interaction=nonstopmode main.tex
+          pdflatex -interaction=nonstopmode main.tex
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: compiled-pdf
           path: main.pdf
