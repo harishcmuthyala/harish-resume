@@ -1,0 +1,272 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Harish Muthyala} \\
+    {\small
+        \vspace{6pt}
+        \textbf{Address:} 1600 Space Center Blvd., Houston, TX $|$ \textbf{Mobile:} +1 (281) 965-2335 \\
+        \vspace{3pt}
+        \href{mailto:harishcmuthyala@gmail.com}{\faEnvelope~\underline{harishcmuthyala@gmail.com}} \hspace{1em}
+        \href{https://linkedin.com/in/harish-muthyala}{\faLinkedinSquare~\underline{linkedin.com/in/harish-muthyala}} \hspace{1em}
+        \href{https://github.com/harishcmuthyala}{\faGithub~\underline{github.com/harishcmuthyala}}
+    }
+\end{center}
+
+
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Master's of Science in Computer Science, \textmd{\textit{University of Houston}}}{Aug. 2024 -- May 2026}
+    % {University of Houston}{Aug. 2024 -- May 2026}
+    {Machine Learning, Generative AI, Advanced Operating Systems}{Houston, TX}
+
+  \resumeSubheading
+    {Bachelors in Computer Science, \textmd{\textit{Vellore Institute of Technology}}}{Jul. 2018 -- Apr 2022}
+    % {Vellore Institute of Technology}{Aug. 2018 -- May 2022} 
+    {Design of Algorithms, Computer Networks, Artificial INtelligence}{Vellore, India}
+\resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C/C++, SQL (Postgres, DynamoDB), JavaScript, HTML/CSS, R} \\
+     \textbf{Frameworks}{: Langchain, RAG, MLops, Tensorflow, pandas, Numpy, Agents, React, Node.js, Flask, FastAPI} \\
+     \textbf{Cloud}{: AWS S3, Lambda, Sagemaker, Bedrock, EC2, ECS, VPC, Codepipeline, Quicksight, Azure Foundations} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Postman, VS Code, Jupyter} \\
+     \textbf{Credentials}{: \href{https://www.credly.com/badges/039636fa-06fc-481c-89c9-1ba273265831} {\underline{AWS Solutions Architect - Associate}}, \href{https://www.linkedin.com/feed/update/urn:li:activity:7168496550732554240/} {\underline{Accenture Trailblazer}}
+     % \href{Accenture Codewhisperer Blog}{Accenture Article}}
+    }}}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+%    \resumeSubheading
+%      {Undergraduate Research Assistant}{June 2020 -- Present}
+%      {Texas A\&M University}{College Station, TX}
+%      \resumeItemListStart
+%        \resumeItem{Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems}
+%        \resumeItem{Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data}
+%        \resumeItem{Explored ways to visualize GitHub collaboration in a classroom setting}
+%      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    
+
+    \resumeSubheading
+      {Generative AI Engineer}{May 2023 -- July 2024}
+      {Senior Analyst, Accenture AWS Business Group (AABG)}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Built an OpenSearch-based similarity scoring system with \textbf{threshold filtering} to handle irrelevant user queries in a GenAI credit underwriting RAG pipeline.}
+        % NOTE: Developed a chunk similarity scoring mechanism using OpenSearch to filter out irrelevant questions, improving retrieval precision. This enhanced user experience by focusing LLM context on relevant financial document segments, critical for accurate underwriting insights.
+        
+        \resumeItem{Implemented OpenSearch Serverless vector DB to store embeddings generated via \textbf{Titan model}, structuring tabular client data from Excel for efficient retrieval.}
+        % NOTE: Converted complex 10-K/10-Q Excel financial tables into vector embeddings stored in OpenSearch Serverless. Worked on data normalization, chunking, and embedding transfer to optimize search performance and ensure scalability.
+        
+        \resumeItem{Designed few-shot and \textbf{example-based prompt templates} tailored to handle complex financial notations, utilizing claude sonnet, enhancing model accuracy by validating with Bedrock Playground.}
+        % NOTE: Customized Bedrock LLM prompts with domain-specific few-shot examples and special handling of bracketed negatives in financial reports. This refinement improved model interpretability and compliance accuracy in credit memo generation.
+        
+        \resumeItem{Engineered preprocessing pipelines using Pandas for \textbf{data cleaning, chunking, and conversion}, enabling robust and scalable ingestion of tabular financial data.}
+        % NOTE: Developed ETL workflows in Pandas to clean, standardize, and chunk tabular datasets, ensuring consistent and high-quality inputs for embedding and retrieval. This step was vital for maintaining data integrity and pipeline reliability.
+        
+        % \resumeItem{Ensured \textbf{secure deployment} using VPC, IAM policies, and Amazon security roles, collaborating with Accenture’s banking team for continuous accuracy feedback and iterative improvements.}
+        % NOTE: Designed CloudFormation templates incorporating VPC isolation, IAM access controls, and security best practices. Maintained close feedback loops with the banking team, adapting the system to evolving business requirements and achieving 70–80\% reduction in manual underwriting effort.
+        
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Machine Learning Operations(MLOps) Engineer}{Aug. 2022 -- Jan. 2024}
+      {Application Engineering Analyst, Accenture AWS Business Group (AABG)}{Hyderabad, India}
+      \resumeItemListStart
+        \resumeItem{Deployed a \textbf{SageMaker Autopilot} pipeline in a VPC to automate churn prediction and API-based inference.}
+        % NOTE: The project involved ingestion of customer data from S3, training using Autopilot, model selection, and deployment via managed endpoints. Harish used CloudFormation to provision a secure VPC/subnet setup. This demonstrates hands-on experience with low-code ML automation, API security, and MLOps deployment.
+    
+        \resumeItem{Maintained real-time \textbf{model drift} detection using SageMaker Model Monitor Module}
+        % NOTE: Harish configured baseline stats and monitoring schedules for deployed models, enabling early anomaly detection in inputs. Notifications were triggered via CloudWatch-SNS integration. This shows understanding of post-deployment ML health monitoring and operational reliability practices.
+    
+        \resumeItem{Automated QuickSight \textbf{Dashboard migration} across AWS accounts, preserving access and datasets.}
+        % NOTE: Harish scripted QuickSight asset extraction and recreation using APIs, while ensuring IAM roles and data integrity were maintained. The toolkit improved reuse and governance of BI assets. Demonstrates skills in AWS BI tooling, automation, and cross-account data pipelines.
+      \resumeItemListEnd
+
+\resumeSubheading
+      {Information Technology Project Analyst}{Oct. 2024 -- Present}
+      {University of Houston}{Houston, TX}
+      \resumeItemListStart
+        \resumeItem{Handled Migration of \textbf{IT services Tool} from FootPrints to TeamDynamix, improving workflows and tracking.}
+        % NOTE: Led or assisted in transitioning from a legacy ITSM tool (FootPrints) to TeamDynamix. This involved not just data transfer, but understanding business requirements, testing workflows, and supporting automation — directly aligned with PMO's goal of centralized project tracking and improved IT service delivery.
+        
+        \resumeItem{Partnered with teams to move networking assets from Access DB to TeamDynamix.}
+        % NOTE: Collaborated with the Networking team to replace Access DB-based asset management with TeamDynamix modules. Involved requirement gathering, asset mapping, and ensuring data consistency — demonstrates initiative, data handling, and cross-team coordination.
+        
+        \resumeItem{Supported \textbf{software rollouts} like MedProctor and Point'nClick with requirement gathering.}
+        % NOTE: Assisted with integrations of university-wide systems such as MedProctor (health records) and Point & Click (clinic scheduling). Worked on gathering and validating technical/business requirements, and supporting rollout logistics — shows stakeholder interaction and implementation work.
+        
+        \resumeItem{Replaced email-based requests with \textbf{structured workflows} for Business Requests and Change MAnagement.}
+        % NOTE: Improved business request intake by transitioning from informal email threads to standardized request forms and automated workflows in TeamDynamix. Enhances visibility, reduces errors, and supports PMO goals of consistent intake and prioritization.
+        
+        % \resumeItem{Documented syllabus integration use cases and supported launch.}
+        % NOTE: Took part in a digital syllabus integration project. Responsibilities included collecting faculty requirements, drafting use case documentation, coordinating technical tasks, and participating in rollout planning — excellent for demonstrating software project ownership.
+        
+        % \resumeItem{Facilitated cross-team coordination and knowledge handoffs post-project.}
+        % NOTE: Managed communication across multiple teams (Networking, Support Services, Applications) and ensured proper knowledge transfer, documentation, and operational ownership after project completion — aligns with PMO's knowledge transition objective.
+        
+        % \resumeItem{Helped align Support and Networking team workflows in TeamDynamix.}
+        % NOTE: Acted as a liaison to help multiple teams adapt their work processes (e.g., ticketing, asset updates) into TeamDynamix structures. Shows change enablement, stakeholder alignment, and process modeling.
+        
+        % \resumeItem{Improved asset tracking by centralizing tech request processes.}
+        % NOTE: Worked toward centralizing disparate request processes into a unified platform, reducing duplication and improving tracking and reporting — strong fit for roles involving IT operations, systems analysis, or PMO functions.
+        
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Model Context Protocol} $|$ \emph{Python, Claude, Research, Langchain}}{}
+          \resumeItemListStart
+            \resumeItem{Conducted comprehensive research on MCP architecture for LLM communication and context management}
+            \resumeItem{Analyzed protocol integration patterns with frameworks like LangChain and demonstrated real-world applications}
+            \resumeItem{Implemented MCP client-server architecture enabling seamless LLM-application communication}
+            \resumeItem{Created implementation examples showcasing file creation and Google Maps integration via MCP servers}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Exploratory Data Analysis on Customer Churn Prediction} $|$ \emph{Random Forest, Python, Jupyter, Pandas, Git}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a customer churn prediction model for the telecom sector using RF algorithm with .92 accuracy}
+            \resumeItem{Conducted extensive exploratory data analysis to identify key factors influencing customer attrition}
+            \resumeItem{Implemented machine learning techniques to calculate individual customer churn probability, enhancing retention strategies}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+
+
+
+
+
+%-------------------------------------------
+\end{document}
