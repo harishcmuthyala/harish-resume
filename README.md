@@ -18,13 +18,3 @@ git pull origin main
 
 Web: `https://github.com/YOUR_USERNAME/YOUR_REPO/actions`
 
-Install GitHub CLI first:
-```cmd
-winget install --id GitHub.cli
-```
-
-Then:
-```cmd
-gh run list
-gh run view
-```
